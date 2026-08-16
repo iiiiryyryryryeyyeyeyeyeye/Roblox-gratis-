@@ -1,11 +1,11 @@
-                <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roblox</title>
     <style>
-        * {,
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -96,6 +96,11 @@
         }
 
         .fila-doble {
+            display: flex;
+            gap: 12px;
+        }
+
+        .fila-triple {
             display: flex;
             gap: 12px;
         }
@@ -747,7 +752,7 @@
             .logo-pequeño {
                 font-size: 20px;
             }
-            .fila-doble {
+            .fila-triple, .fila-doble {
                 flex-direction: column;
             }
             .cuadro-juegos {
@@ -776,7 +781,7 @@
         <form class="formulario" id="form-cuenta">
             <div>
                 <label class="etiqueta">Fecha de nacimiento</label>
-                <div class="fila-doble">
+                <div class="fila-triple">
                     <div class="columna">
                         <select class="selector" id="select-mes">
                             <option value="">Mes</option>
@@ -795,6 +800,4 @@
                         </select>
                     </div>
                     <div class="columna">
-                        <select class="selector" id="select-dia">
-                            <option value="">Día</option>
-                            <optio 
+                        <select class="selector" id="select
